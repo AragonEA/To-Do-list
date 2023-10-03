@@ -15,9 +15,8 @@ body {
     align-items: center;
 }
 
-#add-btn {
-    height: 100px;
-    width: 50px;
+#add-btn, .btn {
+    min-width: 50px;
 }
 
 textarea,

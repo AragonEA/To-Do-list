@@ -1,4 +1,7 @@
 const $addBtn = document.querySelector("#add-btn");
+const $deleteAllBtn = document.querySelector("#delete-all-btn");
+
+$deleteAllBtn.addEventListener("click", deleteAllTasks);
 $addBtn.addEventListener("click", createTask);
 
 function createTask() {
@@ -26,4 +29,11 @@ function createDeleteBtn() {
 
 function deleteTask(item) {
     item.remove();
+}
+
+function deleteAllTasks() {
+    const $listContainer = document.querySelector("ul")
+    while ($listContainer.hasChildNodes()) {
+        $listContainer.removeChild($listContainer.firstChild)
+    }
 }
