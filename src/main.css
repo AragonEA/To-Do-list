@@ -1,0 +1,40 @@
+body {
+    background-color: #1b1b1b;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.input-container {
+    display: flex;
+    margin: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-btn {
+    height: 100px;
+    width: 50px;
+}
+
+textarea,
+.btn {
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+    word-break: break-all;
+    border-bottom: 2px white solid;
+}
